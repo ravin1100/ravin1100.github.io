@@ -53,7 +53,6 @@ body {
   justify-content: space-between;
   height: 100vh;
   /* background: url(/pics/minimalism.jpg) no-repeat; */
-  /* background-color: #1da15d; */
   background-color: #92bcb5;
   background-size: cover;
   background-position: center;
@@ -141,14 +140,20 @@ body {
   align-items: center;
   gap: 1.5rem;
 }
+#about {
+  background-color: cadetblue;
+}
 .about-img img {
   padding-bottom: 20%;
   max-width: 630px;
   height: auto;
   width: 100%;
   border-radius: 8px;
+  /* border: 1px solid black; */
 }
+
 .about-text h2 {
+  margin-top: 50px;
   font-size: 60px;
 }
 .about-text h2 span {
@@ -166,6 +171,8 @@ body {
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 4rem;
+  margin-right: 2rem;
+  text-align: justify;
 }
 
 @keyframes slideRight {
