@@ -14,7 +14,7 @@ body {
   left: 0;
   width: 100%;
   padding: 20px 10%;
-  background: #051129;
+  /* background: #051129; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +23,8 @@ body {
 .logo {
   position: relative;
   font-size: 25px;
-  color: #fff;
+  /* color: #fff; */
+  color: black;
   text-decoration: none;
   font-weight: 600;
   cursor: default;
@@ -33,7 +34,8 @@ body {
 .navbar a {
   display: inline-block;
   font-size: 25px;
-  color: #fff;
+  /* color: #fff; */
+  color: black;
   text-decoration: none;
   font-weight: 500;
   margin-left: 35px;
@@ -50,7 +52,9 @@ body {
   width: 100%;
   justify-content: space-between;
   height: 100vh;
-  background: url(/pics/background.jpg) no-repeat;
+  /* background: url(/pics/minimalism.jpg) no-repeat; */
+  /* background-color: #1da15d; */
+  background-color: #92bcb5;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -203,4 +207,117 @@ body {
     transform: translateY(0px);
     opacity: 1;
   }
+}
+
+/* Style for the contact section */
+.contact {
+  background-color: #f2f2f2;
+  padding: 80px 0;
+}
+
+.contact .max-width {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact .title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact .column {
+  flex-basis: calc(50% - 20px);
+  padding: 10px;
+}
+
+.contact .column.left {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.contact .text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contact p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.contact .icons {
+  margin-top: 20px;
+}
+
+.contact .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #333;
+}
+
+.contact .sub-title a {
+  color: #0078d4;
+  text-decoration: none;
+}
+
+.contact .column.right {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.contact .fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact .field {
+  flex-basis: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact .button-area {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact button {
+  background-color: #0078d4;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #005aa3;
 }
