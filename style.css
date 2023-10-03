@@ -5,7 +5,6 @@
   font-family: "poppins", sans-serif;
 }
 body {
-  /* color: #ededed; */
   color: black;
   background: indianred;
 }
@@ -19,6 +18,8 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  /* background-color: #fcbb04; */
+  background-color: rgba(252, 187, 4, 0.1);
 }
 .logo {
   position: relative;
@@ -179,6 +180,69 @@ body {
   text-align: justify;
   margin-right: 2rem;
 }
+
+/* ----------------------- Services section ------------------------- */
+
+.services {
+  color: black;
+  margin-bottom: 50px;
+}
+.services .title {
+  font-size: 60px;
+  padding: 90px;
+}
+.serv-content {
+  display: flex;
+  justify-content: space-around;
+}
+.services .serv-content .card {
+  width: calc(33% - 20px);
+  text-align: center;
+  border-radius: 6px;
+  padding: 50px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: rgba(252, 187, 4, 0.2);
+}
+.services .serv-content .card:hover {
+  background: #fcbb04;
+  color: #555;
+}
+.services .serv-content .card .box {
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box {
+  transform: scale(1.05);
+}
+.services .serv-content .card i {
+  font-size: 50px;
+  color: #fcbb04;
+  transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i {
+  color: #000;
+}
+.services .serv-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+/* ------------------------- Github Stats --------------------------- */
+
+.react-activity-calendar {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.copyright-mark {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* ------------------------- Animation ------------------------------- */
 
 @keyframes slideRight {
   0% {
