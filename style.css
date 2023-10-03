@@ -8,6 +8,9 @@ body {
   color: black;
   background: indianred;
 }
+
+/* ----------------------- Header ------------------------- */
+
 .header {
   position: fixed;
   top: 0;
@@ -18,10 +21,10 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  background-color: #fcbb04;
+  background-color: rgba(252, 187, 4, 0.3);
 }
 .logo {
-  position: relative;
+  /* position: relative; */
   font-size: 25px;
   color: black;
   text-decoration: none;
@@ -45,13 +48,16 @@ body {
 .navbar a:hover {
   color: #fcbb04;
 }
+
+/* ----------------------- Home section ------------------------- */
+
 .home {
-  position: 100%;
-  width: 100%;
+  /* position: 100%; */
+  /* width: 100%; */
   height: 100vh;
   /* background: url(/pics/minimalism.jpg); */
-  background-size: cover;
-  background-position: center;
+  /* background-size: cover; */
+  /* background-position: center; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,8 +75,8 @@ body {
 }
 .home-content h3:nth-of-type(2) {
   margin-bottom: 30px;
-  animation: slideTop 1s ease forwards;
-  animation-delay: 0.7s;
+  /* animation: slideTop 1s ease forwards; */
+  /* animation-delay: 0.7s; */
 }
 .home-content h3 span {
   color: #fcbb04;
@@ -149,6 +155,9 @@ body {
     0 0 50px rgba(252, 187, 4, 0.5), 0 0 100px rgba(252, 187, 4, 0.5),
     0 0 200px rgba(252, 187, 4, 0.5);
 }
+
+/* ----------------------- About section ------------------------- */
+
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -252,13 +261,61 @@ body {
   text-align: center;
 }
 .project-card {
-  width: calc(100 / 3%);
+  border: 1px solid green;
+  background-color: rgba(252, 187, 4, 0.2);
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  text-align: center;
 }
 .project-img {
   width: 100%;
+  height: 250px;
+  padding: 30px;
+}
+.project-text {
+  padding: 20px;
+  padding-bottom: 10px;
+  border: 1px solid yellow;
 }
 .project-card img {
   width: 100%;
+  height: 100%;
+}
+.project-title {
+  margin-bottom: 10px;
+}
+.project-description {
+  margin-bottom: 10px;
+}
+.project-tech-stack {
+  margin-bottom: 10px;
+}
+.project-btn-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border: 1px solid red;
+}
+.project-github-link,
+.project-deployed-link {
+  display: block;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  font-size: 40px;
+  color: #fcbb04;
+  transition: 0.5s ease;
+  margin: 30px 15px 30px 0;
+  border: 1px solid black;
+}
+.project-github-link:hover,
+.project-deployed-link:hover {
+  background: #fcbb04;
 }
 
 /* ------------------------- Contact section --------------------------- */
@@ -301,7 +358,7 @@ body {
 }
 .contact .contact-content .row i {
   font-size: 25px;
-  color: #92bcb5;
+  color: #fcbb04;
 }
 .contact .contact-content .info .head {
   font-weight: 500;

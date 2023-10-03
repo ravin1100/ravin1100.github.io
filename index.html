@@ -33,7 +33,7 @@
 
   <!---------------------------Home section starts--------------------------------------------->
 
-  <section class="home" id="home">
+  <section id="home" class="home">
     <div class="home-content">
       <h3>Hello, It's Me</h3>
       <h1 id="user-detail-name">Ravin Kumar Jangir</h1>
@@ -176,54 +176,67 @@
         <div class="project-img">
           <img src="./pictures/project1.png" alt="">
         </div>
-        <h3 class="project-title">Title</h3>
-        <p class="project-description">Description</p>
-        <p class="project-tech-stack">Tech Stacks</p>
-        <button class="project-github-link"></button>
-        <button class="project-deployed-link"></button>
+        <div class="project-text">
+          <h3 class="project-title">Go Trendy</h3>
+          <p class="project-description">Tata CliQ Clone - An e-commerce website that sells a variety of products</p>
+          <p class="project-tech-stack">HTML | CSS | JavaScript</p>
+          <div class="project-btn-container">
+            <button class="project-github-link"><a href="#"><i class='bx bxl-github'></i></button>
+            <button class="project-deployed-link"><a href="#"><i class='bx bxl-netlify'></i></a></button>
+          </div>
+        </div>
       </div>
       <div class="project-card">
         <div class="project-img">
           <img src="./pictures/project2.png" alt="">
         </div>
-        <h3 class="project-title">Title</h3>
-        <p class="project-description">Description</p>
-        <p class="project-tech-stack">Tech Stacks</p>
-        <button class="project-github-link"></button>
-        <button class="project-deployed-link"></button>
+        <div class="project-text">
+          <h3 class="project-title">Caroma</h3>
+          <p class="project-description">Caratlane Clone - A women-focused e-commerce website that sells a
+            variety of modern, fine jewelry</p>
+          <p class="project-tech-stack">HTML | CSS | JavaScript</p>
+          <div class="project-btn-container">
+            <button class="project-github-link"><a href="#"><i class='bx bxl-github'></i></button>
+            <button class="project-deployed-link"><a href="#"><i class='bx bxl-netlify'></i></a></button>
+          </div>
+        </div>
       </div>
       <div class="project-card">
         <div class="project-img">
           <img src="./pictures/project3.png" alt="">
         </div>
-        <h3 class="project-title">Title</h3>
-        <p class="project-description">Description</p>
-        <p class="project-tech-stack">Tech Stacks</p>
-        <button class="project-github-link"></button>
-        <button class="project-deployed-link"></button>
+        <div class="project-text">
+          <h3 class="project-title">Lightly Pay</h3>
+          <p class="project-description">A console-based Java application where consumers can
+            pay electricity bills and use many other services
+          </p>
+          <p class="project-tech-stack">Java</p>
+          <div class="project-btn-container">
+            <button class="project-github-link"><a href="#"><i class='bx bxl-github'></i></button>
+            <button class="project-deployed-link"><a href="#"><i class='bx bxl-netlify'></i></a></button>
+          </div>
+        </div>
       </div>
       <div class="project-card">
         <div class="project-img">
           <img src="./pictures/project4.png" alt="">
         </div>
-        <h3 class="project-title">Title</h3>
-        <p class="project-description">Description</p>
-        <p class="project-tech-stack">Tech Stacks</p>
-        <button class="project-github-link"></button>
-        <button class="project-deployed-link"></button>
+        <div class="project-text">
+          <h3 class="project-title">Adventure Park</h3>
+          <p class="project-description">Spring Boot application for amusement park activity booking</p>
+          <p class="project-tech-stack">Java | SpringBoot | Maven | Hibernate | HTML | CSS | JavaScript</p>
+          <div class="project-btn-container">
+            <button class="project-github-link"><a href="#"><i class='bx bxl-github'></i></button>
+            <button class="project-deployed-link"><a href="#"><i class='bx bxl-netlify'></i></a></button>
+          </div>
+
+        </div>
       </div>
     </div>
+
   </section>
 
   <!----------------------------Contact section starts----------------------------------->
-
-  <!-- <section id="contact">
-    <a id="contact-github" href="https://github.com/ravin1100" target="_blank">GitHub Profile</a>
-    <a id="contact-linkedin" href="https://www.linkedin.com/in/ravin-kumar-jangir-502a03142/" target="_blank">LinkedIn
-      Profile</a>
-    <p id="contact-phone">Phone Number: +91-8503008796</p>
-    <p id="contact-email">Email Address: ravinjangir.rj1100@gmail.com</p>
-  </section> -->
 
   <!-- contact section start -->
   <section class="contact" id="contact">
@@ -238,7 +251,8 @@
               <a href="mailto:ravinjangir.rj1100@gmail.com"> <i class="fas fa-envelope"></i> </a>
               <div class="info">
                 <div class="head"></div>
-                <div class="sub-title"> <a href="mailto:ravinjangir.rj1100@gmail.com">ravinjangir.rj1100@gmail.com </a>
+                <div class="sub-title" id="contact-email"> <a
+                    href="mailto:ravinjangir.rj1100@gmail.com">ravinjangir.rj1100@gmail.com </a>
                 </div>
               </div>
             </div>
@@ -246,7 +260,6 @@
               <a href="https://www.linkedin.com/in/ravin-kumar-jangir-502a03142/" target="_blank"> <i
                   class="fab fa-linkedin"></i> </a>
               <div class="info">
-                <!-- <div class="head">Address</div> -->
                 <div class="sub-title"> <a href="https://www.linkedin.com/in/ravin-kumar-jangir-502a03142/"
                     target="_blank">Linkedin</a> </div>
               </div>
@@ -254,16 +267,15 @@
             <div class="row">
               <a href="https://github.com/ravin1100" target="_blank"> <i class="fab fa-github"></i> </a>
               <div class="info">
-                <!-- <div class="head">Email</div> -->
-                <div class="sub-title"> <a href="https://github.com/ravin1100" target="_blank">GitHub</a> </div>
+                <div class="sub-title" id="contact-github"> <a href="https://github.com/ravin1100"
+                    target="_blank">GitHub</a> </div>
               </div>
             </div>
 
             <div class="row">
               <i class="fas fa-phone-alt"></i>
               <div class="info">
-                <!-- <div class="head">Email</div> -->
-                <div class="sub-title"> +91 8503008796</div>
+                <div class="sub-title" id="contact-phone"> +91 8503008796</div>
               </div>
             </div>
           </div>
