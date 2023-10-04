@@ -252,6 +252,51 @@ body {
   margin: 10px 0 7px 0;
 }
 
+/* ----------------------- Skills section ------------------------- */
+
+.skills-main-container h2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 60px;
+  text-align: center;
+}
+.skills-card-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  gap: 40px;
+}
+.skills-card {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(252, 187, 4, 0.2);
+  box-shadow: 0 0 5px rgba(252, 187, 4, 0.3), 0 0 25px rgba(252, 187, 4, 0.3),
+    0 0 50px rgba(252, 187, 4, 0.3), 0 0 100px rgba(252, 187, 4, 0.3),
+    0 0 200px rgba(252, 187, 4, 0.3);
+  border-radius: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  cursor: default;
+  transition: 0.5s ease;
+}
+.skills-card:hover {
+  background: #fcbb04;
+  transform: scale(1.05);
+}
+.skills-card-img {
+  height: 80px;
+}
+.skills-card > div:nth-child(2) {
+  font-size: 18px;
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
 /* ----------------------- Projects section ------------------------- */
 
 .project-container {
@@ -275,6 +320,11 @@ body {
   box-shadow: 0 0 5px rgba(252, 187, 4, 0.3), 0 0 25px rgba(252, 187, 4, 0.3),
     0 0 50px rgba(252, 187, 4, 0.3), 0 0 100px rgba(252, 187, 4, 0.3),
     0 0 200px rgba(252, 187, 4, 0.3);
+  transition: 0.5s ease;
+}
+.project-card:hover {
+  background: #fcbb04;
+  transform: scale(1.05);
 }
 .project-img {
   width: 100%;
