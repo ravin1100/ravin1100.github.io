@@ -299,7 +299,7 @@ body {
   margin-bottom: 10px;
 }
 .project-btn-container {
-  width: 80%;
+  width: 70%;
   margin: auto;
   display: flex;
   justify-content: space-around;
@@ -314,9 +314,10 @@ body {
   border: none;
   border-radius: 10px;
   background: transparent;
-  font-size: 40px;
-  color: #fcbb04;
+  font-size: 35px;
+  color: black;
   transition: 0.5s ease;
+  padding: 5px;
 }
 .project-github-link:hover,
 .project-deployed-link:hover {
@@ -498,4 +499,18 @@ body {
     transform: translateY(0px);
     opacity: 1;
   }
+}
+
+/* ------------------------- Media queries ------------------------------- */
+
+/* Styles for screens with a maximum width of 768 pixels (typical for mobile devices) */
+@media screen and (max-width: 768px) {
+}
+
+/* Styles for screens with a minimum width of 769 pixels and a maximum width of 1024 pixels (typical for tablets) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* Styles for screens with a minimum width of 1025 pixels (typical for desktops) */
+@media screen and (min-width: 1025px) {
 }
