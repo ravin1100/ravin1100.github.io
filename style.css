@@ -141,11 +141,11 @@ body {
     0 0 50px rgba(252, 187, 4, 0.5), 0 0 100px rgba(252, 187, 4, 0.5),
     0 0 200px rgba(252, 187, 4, 0.5);
 }
-.home-img {
+.home-img1 {
   width: 400px;
   height: 400px;
 }
-.home-img img {
+.home-img1 img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -158,20 +158,23 @@ body {
 
 /* ----------------------- About section ------------------------- */
 
-/* .about {
+.about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 1.5rem;
-} */
-
-/* .about-img img {
-  padding-bottom: 20%;
-  max-width: 630px;
-  height: auto;
+}
+.home-img {
+  width: 50%;
+  margin-left: 90px;
+}
+.home-img img {
   width: 100%;
-  border-radius: 8px;
-} */
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(252, 187, 4, 0.5), 0 0 25px rgba(252, 187, 4, 0.5),
+    0 0 50px rgba(252, 187, 4, 0.5), 0 0 100px rgba(252, 187, 4, 0.5),
+    0 0 200px rgba(252, 187, 4, 0.5);
+}
 .about-text {
   text-align: justify;
   width: 90%;
