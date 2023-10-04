@@ -158,24 +158,30 @@ body {
 
 /* ----------------------- About section ------------------------- */
 
-.about {
+/* .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 1.5rem;
-}
+} */
 
-.about-img img {
+/* .about-img img {
   padding-bottom: 20%;
   max-width: 630px;
   height: auto;
   width: 100%;
   border-radius: 8px;
+} */
+.about-text {
+  text-align: justify;
+  width: 90%;
+  margin: auto;
 }
 
 .about-text h2 {
   margin-top: 50px;
   font-size: 60px;
+  text-align: center;
 }
 .about-text h2 span {
   color: #fcbb04;
@@ -194,6 +200,8 @@ body {
   margin-bottom: 4rem;
   text-align: justify;
   margin-right: 2rem;
+  /* width: 90%;
+  margin: auto; */
 }
 
 /* ----------------------- Services section ------------------------- */
@@ -247,13 +255,12 @@ body {
 /* ----------------------- Projects section ------------------------- */
 
 .project-container {
-  width: 95%;
+  width: 90%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
   gap: 2%;
-  border: 1px solid white;
 }
 #projects h2 {
   font-size: 60px;
@@ -261,11 +268,13 @@ body {
   text-align: center;
 }
 .project-card {
-  border: 1px solid green;
   background-color: rgba(252, 187, 4, 0.2);
-  border-top-right-radius: 40px;
-  border-bottom-left-radius: 40px;
+  border-top-right-radius: 70px;
+  border-bottom-left-radius: 70px;
   text-align: center;
+  box-shadow: 0 0 5px rgba(252, 187, 4, 0.3), 0 0 25px rgba(252, 187, 4, 0.3),
+    0 0 50px rgba(252, 187, 4, 0.3), 0 0 100px rgba(252, 187, 4, 0.3),
+    0 0 200px rgba(252, 187, 4, 0.3);
 }
 .project-img {
   width: 100%;
@@ -273,9 +282,8 @@ body {
   padding: 30px;
 }
 .project-text {
-  padding: 20px;
+  padding: 0 20px 20px 20px;
   padding-bottom: 10px;
-  border: 1px solid yellow;
 }
 .project-card img {
   width: 100%;
@@ -296,7 +304,6 @@ body {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  border: 1px solid red;
 }
 .project-github-link,
 .project-deployed-link {
@@ -310,8 +317,6 @@ body {
   font-size: 40px;
   color: #fcbb04;
   transition: 0.5s ease;
-  margin: 30px 15px 30px 0;
-  border: 1px solid black;
 }
 .project-github-link:hover,
 .project-deployed-link:hover {
