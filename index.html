@@ -12,29 +12,51 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
   <!------------------------- Header starts ------------------------------------------------>
 
-  <header class="header">
-    <div> <a href="#" class="logo">ℛ<span>𝒥</span>.</a></div>
-
-
-    <nav class="navbar" id="nav-menu">
-      <a href="#home" style="--i: 1" class="active" class="nav-link home">Home</a>
+  <!-- <header class="header">
+    <a href="#" class="logo">ℛ<span>𝒥</span>.</a>
+    <div class="navbar" id="nav-menu">
+      <a href="#home" style="--i: 1" class="nav-link home">Home</a>
       <a href="#about" style="--i: 2" class="nav-link about">About</a>
       <a href="#skills" style="--i: 3" class="nav-link skills">Skills</a>
       <a href="#projects" style="--i: 4" class="nav-link projects">Projects</a>
       <a href="#contact" style="--i: 5" class="nav-link contact">Contact</a>
       <a href="https://drive.google.com/uc?export=download&id=1GCIN7auVOST8lFL4aQQtnW7kgWWgB4mb" style="--i: 6"
         class="nav-link resume" id="resume-button-1">Resume</a>
-    </nav>
-  </header>
+    </div>
+  </header> -->
+
+  <nav id="nav-menu" class="navbar">
+    <div class="logo">ℛ<span>𝒥</span>.</div>
+
+    <ul class="nav-links">
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <div class="menu">
+        <li><a class="nav-link home" href="#home">Home</a></li>
+        <li><a class="nav-link about" href="#about">About</a></li>
+        <li><a class="nav-link skills" href="#skills">Skills</a></li>
+        <li><a class="nav-link projects" href="#projects">Projects</a></li>
+        <li><a class="nav-link contact" href="#contact">Contact</a></li>
+        <li>
+          <a id="resume-button-1" class="nav-link resume"
+            href="https://drive.google.com/u/0/uc?id=1-Dlddam3y7hVcztLaY69P17aJ48e5EKX&export=download">Resume</a>
+        </li>
+        <!-- <button id="resume-button-1" onclick="window.open('./Manish_Gupt_Resume.pdf')">
+                  View Resume <span class="material-icons"> touch_app </span>
+              </button> -->
+      </div>
+    </ul>
+  </nav>
 
   <!---------------------------Home section starts--------------------------------------------->
 
-  <section id="home" class="home">
+  <section id="home" class="home1">
     <div class="home-content">
       <h3>Hello, It's Me</h3>
       <h1 id="user-detail-name">Ravin Kumar Jangir</h1>
@@ -55,14 +77,14 @@
       <a href="https://drive.google.com/uc?id=1GCIN7auVOST8lFL4aQQtnW7kgWWgB4mb&export=download" class="btn-box"
         id="resume-button-2">Resume<i class="bx bxs-download"></i></a>
     </div>
-    <div class="home-img">
-      <img src="./pictures/ravin-jangir.png" alt="Error" />
+    <div class="home-img2">
+      <img class="home-img" src="./pictures/ravin-jangir.png" alt="Error" />
     </div>
   </section>
 
   <!-------------------------About section starts------------------------------------------>
 
-  <section class="about section" id="about">
+  <!-- <section class="about section" id="about">
     <div class="home-img1">
       <img src="/pictures/home-img.gif" alt="" />
     </div>
@@ -70,16 +92,38 @@
       <h2>About <span>Me</span></h2>
       <h4>Full Stack Web Developer</h4>
       <p id="user-detail-intro">
-        Hello there! I'm a full-stack web developer who loves building
-        websites from start to finish. I'm great with both the front and back
-        ends, making sure everything looks awesome and works smoothly. My
-        coding skills are top-notch, and I'm all about creating user-friendly
-        websites. I'm a problem solver at heart and enjoy making complex
-        things simple. When I'm not coding, I'm learning new tricks to stay
-        up-to-date with the latest web trends. Let's work together to make
-        your web project shine!
+        Hello there! I'm a full-stack web developer who's passionate about crafting websites from inception
+        to completion. My expertise spans both the front-end and back-end, ensuring seamless functionality and stunning
+        aesthetics. With top-notch skills in HTML, CSS, JavaScript, Java, Maven, Hibernate, and Spring Boot, I excel at
+        creating user-friendly websites that dazzle users. I thrive on tackling complex challenges and simplifying them.
+        When I'm not immersed in code, you'll find me constantly learning to stay abreast of the latest web trends.
+        Let's collaborate to elevate your web project to excellence!
       </p>
       <a href="#" class="btn-box">More About Me</a>
+    </div>
+  </section> -->
+
+  <section class="about section" id="about">
+    <h2>About <span>Me</span></h2>
+    <div class="about-content">
+      <div class="home-img1">
+        <img src="/pictures/home-img.gif" alt="" />
+      </div>
+      <div class="about-text">
+        <h4>Full Stack Web Developer</h4>
+        <p id="user-detail-intro">
+          Hello there! I'm a full-stack web developer who's passionate about crafting websites from inception
+          to completion. My expertise spans both the front-end and back-end, ensuring seamless functionality and
+          stunning
+          aesthetics. With top-notch skills in HTML, CSS, JavaScript, Java, Maven, Hibernate, and Spring Boot, I excel
+          at
+          creating user-friendly websites that dazzle users. I thrive on tackling complex challenges and simplifying
+          them.
+          When I'm not immersed in code, you'll find me constantly learning to stay abreast of the latest web trends.
+          Let's collaborate to elevate your web project to excellence!
+        </p>
+        <a href="#" class="btn-box">More About Me</a>
+      </div>
     </div>
   </section>
 
